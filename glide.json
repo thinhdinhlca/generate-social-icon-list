@@ -1,0 +1,43 @@
+[
+  {
+    "kind": "column",
+    "name": "Convert social media links to list of icons",
+    "description": "Convert social media links to list of centered icons using HTML",
+    "author": "Thinh Dinh <thinh@lowcode.agency>",
+    "params": [
+      {
+        "name": "LinkedIn",
+        "displayName": "LinkedIn",
+        "type": "string"
+      },
+       {
+        "name": "Twitter",
+        "displayName": "Twitter",
+        "type": "string"
+      },
+      {
+        "name": "Facebook",
+        "displayName": "Facebook",
+        "type": "string"
+      },
+      {
+        "name": "Website",
+        "displayName": "Website",
+        "type": "string"
+      },
+      {
+        "name": "Instagram",
+        "displayName": "Instagram",
+        "type": "string"
+      },
+      {
+        "name": "Email",
+        "displayName": "Instagram",
+        "type": "string"
+      }
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
