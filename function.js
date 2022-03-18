@@ -28,7 +28,7 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   let wb_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Mr755ISwcRYn8zBd2L3z/pub/AwbRCNrb6hjAR0t21DaF.png";
   let in_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/4Tv9Xcfhk9RG45LagySl.png";
   let yt_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/cLvEnvaG13inhm1E5PFX.png";
-  let em_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/n0zQvPjrhWqtr7GwTt5s.png";
+  let em_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/pbOlDrCcoqJUQSStog3U.png";
   
 if (linkedin != "") {
     li_HTML = `<div class = "social-column"> \n \n <a href="${linkedin}" target="blank"><img src="${li_img}" width= "30" height = "30" ></a></div>`;
