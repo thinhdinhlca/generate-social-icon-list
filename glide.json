@@ -37,7 +37,7 @@
       },
       {
         "name": "Email",
-        "displayName": "Instagram",
+        "displayName": "Email",
         "type": "string"
       }
     ],
