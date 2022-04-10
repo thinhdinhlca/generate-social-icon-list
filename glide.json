@@ -39,6 +39,11 @@
         "name": "Email",
         "displayName": "Email",
         "type": "string"
+      },
+      {
+        "name": "WhatsApp",
+        "displayName": "WhatsApp",
+        "type": "string"
       }
     ],
     "result": {
