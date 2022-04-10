@@ -1,4 +1,4 @@
-window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email) {
+window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp) {
 
   linkedin = linkedin.value ?? "";
   twitter = twitter.value ?? "";
@@ -7,8 +7,9 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   instagram = instagram.value ?? "";
   youtube = youtube.value ?? "";
   email = email.value ?? "";
+  whatsapp = whatsapp.value ?? "";
 
-  if (linkedin == "" && twitter == "" && facebook == "" && website == "" && instagram == "" && youtube == "" && email == "") {
+  if (linkedin == "" && twitter == "" && facebook == "" && website == "" && instagram == "" && youtube == "" && email == "" && whatsapp == "") {
     return "";
   }
 
@@ -21,6 +22,7 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   let in_HTML = "";
   let yt_HTML = "";
   let em_HTML = "";
+  let ws_HTML = "";
 
     //Image links
   let li_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Mr755ISwcRYn8zBd2L3z/pub/YPtpsMvhgMpWz75UGhmO.png";
@@ -30,6 +32,7 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   let in_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/4Tv9Xcfhk9RG45LagySl.png";
   let yt_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/cLvEnvaG13inhm1E5PFX.png";
   let em_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/pbOlDrCcoqJUQSStog3U.png";
+  let ws_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/ACcKtnFmkOOV7lsTHcV9/pub/tKpquLCJ9SpOEPWLuNV6.png";
   
 if (linkedin != "") {
     li_HTML = `<div class = "social-column"> \n \n <a href="${linkedin}" target="blank"><img src="${li_img}" width= "30" height = "30" ></a></div>`;
@@ -59,8 +62,12 @@ if (linkedin != "") {
   if (email != "") {
     em_HTML = `<div class = "social-column"> \n \n <a href="mailto:${email}" target="blank"><img src="${em_img}" width= "30" height = "30" ></a></div>`;
   }
+    
+  if (whatsapp != "") {
+    ws_HTML = `<div class = "social-column"> \n \n <a href="${whatsapp}" target="blank"><img src="${ws_img}" width= "30" height = "30" ></a></div>`;
+  }
   
-  let social_joined = [li_HTML, tw_HTML, fb_HTML, wb_HTML, in_HTML, yt_HTML, em_HTML].filter(Boolean).join("\n \n ");
+  let social_joined = [li_HTML, tw_HTML, fb_HTML, wb_HTML, in_HTML, yt_HTML, em_HTML, ws_HTML].filter(Boolean).join("\n \n ");
 
   let final = `<div class="social-row">
   \n \n ${social_joined}
