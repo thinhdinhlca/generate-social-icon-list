@@ -1,15 +1,15 @@
 window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok) {
 
-  linkedin = linkedin.value ?? "";
-  twitter = twitter.value ?? "";
-  facebook = facebook.value ?? "";
-  website = website.value ?? "";
-  instagram = instagram.value ?? "";
-  youtube = youtube.value ?? "";
-  email = email.value ?? "";
-  whatsapp = whatsapp.value ?? "";
-  pinterest = pinterest.value ?? "";
-  tiktok = tiktok.value ?? "";
+  linkedin = linkedin.value;
+  twitter = twitter.value;
+  facebook = facebook.value;
+  website = website.value;
+  instagram = instagram.value;
+  youtube = youtube.value;
+  email = email.value;
+  whatsapp = whatsapp.value;
+  pinterest = pinterest.value;
+  tiktok = tiktok.value;
 
   if (linkedin == "" && twitter == "" && facebook == "" && website == "" && instagram == "" && youtube == "" && email == "" && whatsapp == "" && pinterest == "" && tiktok == "") {
     return "";
