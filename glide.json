@@ -44,6 +44,16 @@
         "name": "WhatsApp",
         "displayName": "WhatsApp",
         "type": "string"
+      },
+      {
+        "name": "Pinterest",
+        "displayName": "Pinterest",
+        "type": "string"
+      },
+      {
+        "name": "TikTok",
+        "displayName": "TikTok",
+        "type": "string"
       }
     ],
     "result": {
