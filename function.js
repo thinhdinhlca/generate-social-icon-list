@@ -86,7 +86,7 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
     tt_HTML = `<div class = "social-column"> \n \n <a href="${tiktok}" target="blank"><img src="${tt_img}" width= "30" height = "30" ></a></div>`;
   }
   
-  let social_joined = [tl_HTML, li_HTML, tw_HTML, fb_HTML, wb_HTML, in_HTML, yt_HTML, em_HTML, ws_HTML,pi_HTML,tt_HTML].filter(Boolean).join("\n \n ");
+  let social_joined = [li_HTML, tw_HTML, fb_HTML, wb_HTML, in_HTML, yt_HTML, em_HTML, ws_HTML,pi_HTML,tt_HTML,tl_HTML].filter(Boolean).join("\n \n ");
 
   let final = `<div class="social-row">
   \n \n ${social_joined}
