@@ -56,7 +56,7 @@
         "type": "string"
       },
       {
-        "name": "Telegram",
+        "name": "telegram",
         "displayName": "Telegram",
         "type": "string"
       }
