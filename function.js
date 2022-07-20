@@ -1,4 +1,4 @@
-window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok) {
+window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram) {
 
   linkedin = linkedin.value ?? "";
   twitter = twitter.value ?? "";
