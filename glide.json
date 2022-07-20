@@ -54,6 +54,11 @@
         "name": "TikTok",
         "displayName": "TikTok",
         "type": "string"
+      },
+      {
+        "name": "Telegram",
+        "displayName": "Telegram",
+        "type": "string"
       }
     ],
     "result": {
