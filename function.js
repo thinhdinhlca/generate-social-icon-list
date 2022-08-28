@@ -1,4 +1,4 @@
-window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram) {
+window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp) {
 
   linkedin = linkedin.value ?? "";
   twitter = twitter.value ?? "";
@@ -11,8 +11,9 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   pinterest = pinterest.value ?? "";
   tiktok = tiktok.value ?? "";
   telegram = telegram.value ?? "";
+  yelp = yelp.value ?? "";
 
-  if (telegram == "" && linkedin == "" && twitter == "" && facebook == "" && website == "" && instagram == "" && youtube == "" && email == "" && whatsapp == "" && pinterest == "" && tiktok == "") {
+  if (yelp == "" && telegram == "" && linkedin == "" && twitter == "" && facebook == "" && website == "" && instagram == "" && youtube == "" && email == "" && whatsapp == "" && pinterest == "" && tiktok == "") {
     return "";
   }
 
@@ -28,7 +29,8 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   let ws_HTML = "";
   let pi_HTML = "";
   let tt_HTML = "";
-
+  let ye_HTML = "";
+    
     //Image links
   let tl_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/UBQEtHCGAaUCK6SmkKKI.png";
   let li_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Mr755ISwcRYn8zBd2L3z/pub/YPtpsMvhgMpWz75UGhmO.png";
@@ -41,7 +43,12 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   let ws_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/ACcKtnFmkOOV7lsTHcV9/pub/tKpquLCJ9SpOEPWLuNV6.png";
   let pi_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/aERzn549fzlrRK6IuaKk.png";
   let tt_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/kADuVCdD7LsazzPaOiQv.png";
+  let ye_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/FEz2yDNF2weU0PhBn3wh.png";
   
+  if (yelp != "") {
+    ye_HTML = `<div class = "social-column"> \n \n <a href="${yelp}" target="blank"><img src="${ye_img}" width= "30" height = "30" ></a></div>`;
+  }
+    
   if (telegram != "") {
     tl_HTML = `<div class = "social-column"> \n \n <a href="${telegram}" target="blank"><img src="${tl_img}" width= "30" height = "30" ></a></div>`;
   }
