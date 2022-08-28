@@ -59,6 +59,11 @@
         "name": "telegram",
         "displayName": "Telegram",
         "type": "string"
+      },
+      {
+        "name": "yelp",
+        "displayName": "Yelp",
+        "type": "string"
       }
     ],
     "result": {
