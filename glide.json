@@ -64,6 +64,16 @@
         "name": "yelp",
         "displayName": "Yelp",
         "type": "string"
+      },
+      {
+        "name": "phone",
+        "displayName": "Phone",
+        "type": "string"
+      },
+      {
+        "name": "message",
+        "displayName": "Message",
+        "type": "string"
       }
     ],
     "result": {
