@@ -1,4 +1,4 @@
-window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp) {
+window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp, phone, message) {
 
   linkedin = linkedin.value ?? "";
   twitter = twitter.value ?? "";
@@ -12,8 +12,10 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   tiktok = tiktok.value ?? "";
   telegram = telegram.value ?? "";
   yelp = yelp.value ?? "";
+  phone = phone.value ?? "";
+  message = message.value ?? "";
 
-  if (yelp == "" && telegram == "" && linkedin == "" && twitter == "" && facebook == "" && website == "" && instagram == "" && youtube == "" && email == "" && whatsapp == "" && pinterest == "" && tiktok == "") {
+  if (phone == "" && message == "" && yelp == "" && telegram == "" && linkedin == "" && twitter == "" && facebook == "" && website == "" && instagram == "" && youtube == "" && email == "" && whatsapp == "" && pinterest == "" && tiktok == "") {
     return "";
   }
 
@@ -30,6 +32,8 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   let pi_HTML = "";
   let tt_HTML = "";
   let ye_HTML = "";
+  let ph_HTML = "";
+  let ms_HTML = "";
     
     //Image links
   let tl_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/UBQEtHCGAaUCK6SmkKKI.png";
@@ -44,7 +48,17 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   let pi_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/aERzn549fzlrRK6IuaKk.png";
   let tt_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/kADuVCdD7LsazzPaOiQv.png";
   let ye_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/FEz2yDNF2weU0PhBn3wh.png";
+  let ph_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/mEfOSTRFMtF01CxDkREg.png";
+  let ms_img = "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/r21OIORoDpKuA16rTxqR.png";
   
+  if (phone != "") {
+    ph_HTML = `<div class = "social-column"> \n \n <a href="tel:${phone}" target="blank"><img src="${ph_img}" width= "30" height = "30" ></a></div>`;
+  }
+    
+  if (message != "") {
+    ms_HTML = `<div class = "social-column"> \n \n <a href="sms://${message}" target="blank"><img src="${ph_img}" width= "30" height = "30" ></a></div>`;
+  }
+    
   if (yelp != "") {
     ye_HTML = `<div class = "social-column"> \n \n <a href="${yelp}" target="blank"><img src="${ye_img}" width= "30" height = "30" ></a></div>`;
   }
@@ -93,7 +107,7 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
     tt_HTML = `<div class = "social-column"> \n \n <a href="${tiktok}" target="blank"><img src="${tt_img}" width= "30" height = "30" ></a></div>`;
   }
   
-  let social_joined = [li_HTML, tw_HTML, fb_HTML, wb_HTML, in_HTML, yt_HTML, em_HTML, ws_HTML,pi_HTML,tt_HTML,tl_HTML,ye_HTML].filter(Boolean).join("\n \n ");
+  let social_joined = [li_HTML, tw_HTML, fb_HTML, wb_HTML, in_HTML, yt_HTML, em_HTML, ws_HTML,pi_HTML,tt_HTML,tl_HTML,ye_HTML,ph_HTML,ms_HTML].filter(Boolean).join("\n \n ");
 
   let final = `<div class="social-row">
   \n \n ${social_joined}
