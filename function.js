@@ -56,7 +56,7 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   }
     
   if (message != "") {
-    ms_HTML = `<div class = "social-column"> \n \n <a href="sms://${message}" target="blank"><img src="${ph_img}" width= "30" height = "30" ></a></div>`;
+    ms_HTML = `<div class = "social-column"> \n \n <a href="sms://${message}" target="blank"><img src="${ms_img}" width= "30" height = "30" ></a></div>`;
   }
     
   if (yelp != "") {
