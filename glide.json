@@ -66,6 +66,11 @@
         "type": "string"
       },
       {
+        "name": "gbusiness",
+        "displayName": "Google Business Profile",
+        "type": "string"
+      },
+      {
         "name": "phone",
         "displayName": "Phone",
         "type": "string"
