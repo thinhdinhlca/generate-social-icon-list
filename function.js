@@ -1,4 +1,4 @@
-window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp, phone, message, gbusiness) {
+window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp, gbusiness, phone, message) {
 
   // Extract values or set default to empty string
   linkedin = linkedin.value ?? "";
