@@ -56,13 +56,13 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
     message: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/r21OIORoDpKuA16rTxqR.png"
   };
 
-  // Generate HTML for each social media link
-  let socialHTML = "";
-  for (const [key, value] of Object.entries({ linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp, phone, message })) {
-    if (value) {
-      socialHTML += createSocialLink(value, imgSources[key]);
-    }
+// Generate HTML for each social media link
+let socialHTML = "";
+for (const [key, value] of Object.entries({ linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp, phone, message })) {
+  if (value) {
+    socialHTML += createSocialLink(key, value, imgSources[key]);
   }
+}
 
   // Final HTML structure
   return `<div style="display: flex; align-items: center; justify-content: center;">
