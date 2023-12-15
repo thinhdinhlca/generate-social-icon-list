@@ -1,4 +1,4 @@
-window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp, phone, message) {
+window.function = function (linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp, phone, message, gbusiness) {
 
   // Extract values or set default to empty string
   linkedin = linkedin.value ?? "";
@@ -15,9 +15,10 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   yelp = yelp.value ?? "";
   phone = phone.value ?? "";
   message = message.value ?? "";
+  gbusiness = gbusiness.value ?? "";
 
   // Check if all values are empty
-  if (phone == "" && message == "" && yelp == "" && telegram == "" && linkedin == "" && twitter == "" && facebook == "" && website == "" && instagram == "" && youtube == "" && email == "" && whatsapp == "" && pinterest == "" && tiktok == "") {
+  if (phone == "" && message == "" && yelp == "" && telegram == "" && linkedin == "" && twitter == "" && facebook == "" && website == "" && instagram == "" && youtube == "" && email == "" && whatsapp == "" && pinterest == "" && tiktok == "" && gbusiness == "") {
     return "";
   }
 
@@ -38,7 +39,7 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
             </div>`;
   };
 
-    // Image links for each social media
+  // Image links for each social media
   const imgSources = {
     linkedin: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Mr755ISwcRYn8zBd2L3z/pub/YPtpsMvhgMpWz75UGhmO.png",
     twitter: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Mr755ISwcRYn8zBd2L3z/pub/mAWXwE6VcIS5Qf7eiV88.png",
@@ -53,16 +54,17 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
     telegram: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/UBQEtHCGAaUCK6SmkKKI.png",
     yelp: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/FEz2yDNF2weU0PhBn3wh.png",
     phone: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/mEfOSTRFMtF01CxDkREg.png",
-    message: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/r21OIORoDpKuA16rTxqR.png"
+    message: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/r21OIORoDpKuA16rTxqR.png",
+    gbusiness: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/anr8AmdGaIFBByQWmF0N/pub/VIZNBTwLnx57xZiICwWS.png"
   };
 
-// Generate HTML for each social media link
-let socialHTML = "";
-for (const [key, value] of Object.entries({ linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp, phone, message })) {
-  if (value) {
-    socialHTML += createSocialLink(key, value, imgSources[key]);
+  // Generate HTML for each social media link
+  let socialHTML = "";
+  for (const [key, value] of Object.entries({ linkedin, twitter, facebook, website, instagram, youtube, email, whatsapp, pinterest, tiktok, telegram, yelp, phone, message, gbusiness })) {
+    if (value) {
+      socialHTML += createSocialLink(key, value, imgSources[key]);
+    }
   }
-}
 
   // Final HTML structure
   return `<div style="display: flex; align-items: center; justify-content: center;">
