@@ -42,7 +42,7 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   // Image links for each social media
   const imgSources = {
     linkedin: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Mr755ISwcRYn8zBd2L3z/pub/YPtpsMvhgMpWz75UGhmO.png",
-    twitter: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Mr755ISwcRYn8zBd2L3z/pub/mAWXwE6VcIS5Qf7eiV88.png",
+    twitter: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/HFE2Ht14I6Th9gP2u3Yo/pub/qTZG1onIiLuNL5NjQPpU.jpg",
     facebook: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Mr755ISwcRYn8zBd2L3z/pub/wLTNVGtLqXIpxp6071pC.png",
     website: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Mr755ISwcRYn8zBd2L3z/pub/AwbRCNrb6hjAR0t21DaF.png",
     instagram: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/4Tv9Xcfhk9RG45LagySl.png",
