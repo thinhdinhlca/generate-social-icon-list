@@ -53,7 +53,7 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
     tiktok: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/kADuVCdD7LsazzPaOiQv.png",
     telegram: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/UBQEtHCGAaUCK6SmkKKI.png",
     yelp: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/FEz2yDNF2weU0PhBn3wh.png",
-    phone: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/HFE2Ht14I6Th9gP2u3Yo/pub/QJUjOz7xqY21VJqGyuCc.png",
+    phone: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/HFE2Ht14I6Th9gP2u3Yo/pub/UvFxfpEjrGVErHZz4hZr.png",
     message: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/r21OIORoDpKuA16rTxqR.png",
     gbusiness: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/anr8AmdGaIFBByQWmF0N/pub/VIZNBTwLnx57xZiICwWS.png"
   };
