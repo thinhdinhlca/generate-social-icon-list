@@ -24,20 +24,26 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
 
   // Define base HTML structure with inline styles
   const createSocialLink = (type, value, imgSrc) => {
-    let url;
-    if (type === "email") {
+  let url;
+  switch (type) {
+    case "email":
       url = `mailto:${value}`;
-    } else if (type === "phone") {
+      break;
+    case "phone":
       url = `tel:${value}`;
-    } else {
+      break;
+    case "text":
+      url = `sms:${value}`; // SMS link for texting
+      break;
+    default:
       url = value;
-    }
-    return `<div style="position: relative; display: inline-block; float: right; padding: 10px;"> 
-              <a href="${url}" target="blank">
-                <img src="${imgSrc}" style="width: 30px; height: 30px;">
-              </a>
-            </div>`;
-  };
+  }
+  return `<div style="position: relative; display: inline-block; float: right; padding: 10px;">
+            <a href="${url}" target="blank">
+              <img src="${imgSrc}" style="width: 30px; height: 30px;">
+            </a>
+          </div>`;
+};
 
   // Image links for each social media
   const imgSources = {
@@ -55,7 +61,8 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
     yelp: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/FEz2yDNF2weU0PhBn3wh.png",
     phone: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/HFE2Ht14I6Th9gP2u3Yo/pub/UvFxfpEjrGVErHZz4hZr.png",
     message: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/r21OIORoDpKuA16rTxqR.png",
-    gbusiness: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/anr8AmdGaIFBByQWmF0N/pub/VIZNBTwLnx57xZiICwWS.png"
+    gbusiness: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/anr8AmdGaIFBByQWmF0N/pub/VIZNBTwLnx57xZiICwWS.png",
+    text: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/HFE2Ht14I6Th9gP2u3Yo/pub/uLqihJHAbjqbtON3TxjN.png"
   };
 
   // Generate HTML for each social media link
@@ -65,6 +72,11 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
       socialHTML += createSocialLink(key, value, imgSources[key]);
     }
   }
+
+  // Add the texting link if there is a phone number
+if (phone) {
+  socialHTML += createSocialLink("text", phone, imgSources["text"]);
+}
 
   // Final HTML structure
   return `<div style="display: flex; align-items: center; justify-content: center;">
