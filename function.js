@@ -62,7 +62,7 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
     phone: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/HFE2Ht14I6Th9gP2u3Yo/pub/UvFxfpEjrGVErHZz4hZr.png",
     message: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/kGe07Qg5m2NzxUKiptUf/pub/r21OIORoDpKuA16rTxqR.png",
     gbusiness: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/anr8AmdGaIFBByQWmF0N/pub/VIZNBTwLnx57xZiICwWS.png",
-    text: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/HFE2Ht14I6Th9gP2u3Yo/pub/uLqihJHAbjqbtON3TxjN.png"
+    text: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/HFE2Ht14I6Th9gP2u3Yo/pub/85GKPtiVc5MDFkTI7OGm.png"
   };
 
   // Generate HTML for each social media link
