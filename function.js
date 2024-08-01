@@ -17,6 +17,28 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   message = message.value ?? "";
   gbusiness = gbusiness.value ?? "";
 
+  // Function to add https:// prefix if not present
+  const addHttps = (url) => {
+    if (url && !url.startsWith('http://') && !url.startsWith('https://')) {
+      return 'https://' + url;
+    }
+    return url;
+  };
+
+  // Apply addHttps to relevant fields
+  linkedin = addHttps(linkedin);
+  twitter = addHttps(twitter);
+  facebook = addHttps(facebook);
+  website = addHttps(website);
+  instagram = addHttps(instagram);
+  youtube = addHttps(youtube);
+  whatsapp = addHttps(whatsapp);
+  pinterest = addHttps(pinterest);
+  tiktok = addHttps(tiktok);
+  telegram = addHttps(telegram);
+  yelp = addHttps(yelp);
+  gbusiness = addHttps(gbusiness);
+
   // Check if all values are empty
   if (phone == "" && message == "" && yelp == "" && telegram == "" && linkedin == "" && twitter == "" && facebook == "" && website == "" && instagram == "" && youtube == "" && email == "" && whatsapp == "" && pinterest == "" && tiktok == "" && gbusiness == "") {
     return "";
@@ -24,26 +46,26 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
 
   // Define base HTML structure with inline styles
   const createSocialLink = (type, value, imgSrc) => {
-  let url;
-  switch (type) {
-    case "email":
-      url = `mailto:${value}`;
-      break;
-    case "phone":
-      url = `tel:${value}`;
-      break;
-    case "text":
-      url = `sms:${value}`; // SMS link for texting
-      break;
-    default:
-      url = value;
-  }
-  return `<div style="position: relative; display: inline-block; float: right; padding: 10px;">
-            <a href="${url}" target="blank">
-              <img src="${imgSrc}" style="width: 30px; height: 30px;">
-            </a>
-          </div>`;
-};
+    let url;
+    switch (type) {
+      case "email":
+        url = `mailto:${value}`;
+        break;
+      case "phone":
+        url = `tel:${value}`;
+        break;
+      case "text":
+        url = `sms:${value}`; // SMS link for texting
+        break;
+      default:
+        url = value;
+    }
+    return `<div style="position: relative; display: inline-block; float: right; padding: 10px;">
+              <a href="${url}" target="blank">
+                <img src="${imgSrc}" style="width: 30px; height: 30px;">
+              </a>
+            </div>`;
+  };
 
   // Image links for each social media
   const imgSources = {
@@ -74,9 +96,9 @@ window.function = function (linkedin, twitter, facebook, website, instagram, you
   }
 
   // Add the texting link if there is a phone number
-if (phone) {
-  socialHTML += createSocialLink("text", phone, imgSources["text"]);
-}
+  if (phone) {
+    socialHTML += createSocialLink("text", phone, imgSources["text"]);
+  }
 
   // Final HTML structure
   return `<div style="display: flex; align-items: center; justify-content: center;">
